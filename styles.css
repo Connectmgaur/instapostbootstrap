@@ -1,0 +1,49 @@
+.option-red {
+    color: red;
+}
+
+.bg-light {
+    padding-left: 110px;
+}
+.btn-success {
+    width: 200px;
+    margin-right: 5px;
+}
+.button-grey {
+    padding-right: 110px;
+}
+.insta-pic {
+    width: 400px;
+    height: 400px;
+    margin: 8px 3px 3px 8px;
+    display: flex;
+    justify-content: space-around;
+}
+.feed-card {
+    width: 550px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+.card-title {
+    text-align: left;
+}
+.card-body {
+    text-align: left;
+}
+.card-body img {
+    align-items: center;
+    width: 450px;
+    height: 400px;
+}
+.col {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.card2 {
+    padding-left: 0px;
+    margin-left: 0px;
+}

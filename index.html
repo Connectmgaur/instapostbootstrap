@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/34b7fd823e.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <title>Instagram Feed with Boostrap</title>
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="bi bi-instagram"> Instagram</i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </a>
+    </div>
+ 
+    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Create a new post
+    </button>
+   
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Create a new Post</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Caption </p>
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+              <label for="floatingTextarea2">Add the caption of your post here</label>
+            </div>
+          </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Publish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <div class="btn-group button-grey">
+      <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bi bi-gear-fill"></i>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+        <li><a class="dropdown-item" href="#">Profile</a></li>
+        <li><a class="dropdown-item" href="#">Accessibility</a></li>
+        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item option-red" href="#">Log out</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+      <i class="fa-solid fa-table-cells"></i></button>
+</li>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+        <i class="fa-solid fa-square"></i></button>
+    </li>
+    </ul>
+   
+     <div class="container text-center">
+        <div class="row row-cols-3">
+          <div class="col insta-pic">
+            <img class="img-responsive" src="https://www.agrimaccari.com/en/wp-content/uploads/2015/05/girl-500x500.jpg"
+              alt="Persona " style="min-height:400px;width:100%">
+          </div>
+          <div class="col insta-pic">
+            <img class="img-responsive" src="https://live.staticflickr.com/65535/49389103952_ff4b2cf256.jpg" 
+            alt="Structure with Wiring" style="min-height:400px;width:100%">
+          </div>
+          <div class="col insta-pic">
+            <img class="img-responsive" src="https://i.pinimg.com/564x/fc/6e/c4/fc6ec4f35315c01d0f5153bb690bdfe3.jpg" 
+            alt="Mercedes-Benz" style="min-height:400px;width:100%">
+          </div>
+          <div class="col insta-pic">
+            <img class="img-responsive" src="https://dspncdn.com/a1/media/692x/b1/e1/34/b1e134ace96e8ea0e7a9311dc33c1664.jpg"
+              alt="New York Buildingd"style="min-height:400px;width:100%">
+          </div>
+          
+          <div class="col insta-pic">
+            <img class="img-responsive" src="https://d1oa3togg7hmde.cloudfront.net/images/global/83/108/pirelli-moto-riding-experience-racing-dsk-thumb-500x500-4505523228710.jpg"
+              alt="MotoGP" style="min-height:400px;width:100%">
+          </div>
+          <div class="col insta-pic">
+            <img class="img-responsive" src="https://getsocial.nz/wp-content/uploads/2014/12/Evolution_by_will_yen-500x500.png"
+              alt="Sunset" style="min-height:400px;width:100%">
+          </div
+        </div>
+        <div class="col insta-pic">
+          <img class="img-responsive" src="https://arcticyeti.es/wp-content/uploads/2022/07/auroras-boreales-lofoten-500x500.jpg"
+            alt="Northern lights" style="min-height:400px;width:100%">
+        </div>
+        <div class="col insta-pic">
+          <img class="img-responsive" src="https://images.unsplash.com/photo-1690088141648-3d6d6757cd6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2831&q=80"
+            alt="girl" style="min-height:400px;width:100%">
+        </div>
+        <div class="col insta-pic">
+          <img src="https://es.cravingsjournal.com/wp-content/uploads/2020/09/pizza-de-masa-madre-4-500x500.jpg"
+            alt="Pizza" style="min-height:400px;width:100%">
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <div class="container feed-card">
+      <div class="row row-cols-1 justify-content-center">
+      <div class="col">
+        <div class="card" style="width: 480px;">
+          <div class="card-body">
+            <h3 class="card-title">Mercedes-Benz G-Class</h3>
+            <img src="https://i.pinimg.com/564x/fc/6e/c4/fc6ec4f35315c01d0f5153bb690bdfe3.jpg" alt="Mercedes-Benz">
+            <div class="card-body">
+              <p class="card-likes"><strong>8000 Likes</strong></p>
+              <p class="card-text">"The car has a timeless design since it never goes out of style, even after being manufactured for 20 years</p>
+            </div>
+          </div>
+        </div> 
+        </div>
+        <div class="col">
+          <div class="card" style="width: 480px;">
+            <div class="card-body">
+              <h3 class="card-title">A large structure!</h3>
+              <img src="https://live.staticflickr.com/65535/49389103952_ff4b2cf256.jpg" class="card-img-top"
+                alt="Mercedes-Benz">
+              <div class="card-body">
+                <p class="card-likes"><strong>204 Likes</strong></p>
+                <p class="card-text">"A great structure to admire, structure made by the most prestigious architect in London".</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 480px;">
+            <div class="card-body">
+              <h3 class="card-title">Beautiful Northern lights</h3>
+              <img src="https://arcticyeti.es/wp-content/uploads/2022/07/auroras-boreales-lofoten-500x500.jpg"
+                class="card-img-top" alt="Northern Lights">
+              <div class="card-body">
+                <p class="card-likes"><strong>2334 Likes</strong></p>
+                <p class="card-text">"To see this landscape with your own eyes is something extraordinary.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 480px;">
+            <div class="card-body">
+              <h3 class="card-title">Yummy Pizza</h3>
+              <img src="https://es.cravingsjournal.com/wp-content/uploads/2020/09/pizza-de-masa-madre-4-500x500.jpg"
+                class="card-img-top" alt="Mercedes-Benz">
+              <div class="card-body">
+                <p class="card-likes"><strong>980 Likes</strong></p>
+                <p class="card-text">Tonight we had pizza for dinner at home, and this one had the best appearance
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+  crossorigin="anonymous"></script>
+</body>
+
+
+
